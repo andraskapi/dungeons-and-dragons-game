@@ -14,7 +14,7 @@ public class Monster extends Kozos {
         System.out.println(super.getName() + " attacks " + player.getName());
 
         // Csökkentsd a játékos életét 20-szal!
-        player.setHealth(getHealth() - 20);
+        player.setHealth(player.getHealth() - 20);
 
         // Írd ki: Dealt 20 damage to [játékos neve]!
         System.out.println("Dealt 20 damage to " + player.getName());

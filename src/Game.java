@@ -14,16 +14,17 @@ public class Game {
 
 
         // Példányosíts egy Charactert (hívd meg a konstruktorát) ezzel a változóval!
-        Character playerOne = new Character(sc.nextLine(),100,4);
+        Character playerOne = new Character(sc.nextLine());
 
         // Írd ki: Welcome, [játékos neve]!
-        System.out.println("Welcome " + playerOne.getName() + "!");
+        System.out.println("Welcome " + playerOne.getName() + "HP: " + playerOne.getHealth() +
+                "damage: " + playerOne.getLevel() * 10 + "!");
 
         // Készíts egy 3 hosszúságú tömböt Monster-ekből!
         Monster[] monsters = new Monster[3];
 
         // Töltsd fel szörnyekkel! Példa: monsters[0] = new Monster("Goblin", 50);
-        monsters[0] = new Monster("Orc", 60);
+        monsters[0] = new Monster("Orc", 30);
         monsters[1] = new Monster("Troll", 90);
         monsters[2] = new Monster("Tauren", 100);
 

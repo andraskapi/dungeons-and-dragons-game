@@ -7,7 +7,7 @@ public class Character extends Kozos {
 
 
     // Írj egy egy paraméteres kosntruktort ami beállítja a nevet és a health 100-ra, a levelt pedig 1-re állítja!
-    public Character(String name, int health, int level) {
+    public Character(String name) {
         super(name, 100);
         this.level = 1;
     }
@@ -21,10 +21,11 @@ public class Character extends Kozos {
         monster.setHealth(monster.getHealth() - damage);
 
         // Írd ki: Dealt [damage változó értéke] damage to [játékos neve]!
-        System.out.println("Dealt " + damage + " damage to " + super.getName());
+        System.out.println("Dealt " + damage + " damage to " + monster.getName());
 
         // Ha a szörny élete 0 vagy kisebb, írd ki: [szörny neve] has been defeated!
         if (monster.getHealth() <= 0) {
+            level += 2;
             System.out.println(monster.getName() + " has been defeated! ");
         }
     }
