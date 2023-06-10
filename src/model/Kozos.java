@@ -4,7 +4,7 @@ public class Kozos {
     private String name;
     private int health;
 
-    public Kozos (String name, int health){
+    public Kozos(String name, int health) {
         this.name = name;
         this.health = health;
     }
