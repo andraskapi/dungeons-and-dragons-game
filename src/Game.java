@@ -59,7 +59,7 @@ public class Game {
             int choice = sc.nextInt();
 
             sc.nextLine();
-            Monster chosenMonster = null;
+            Monster chosenMonster = new Monster("",0);
 
             // Ha azt választja, hogy kilép (0), írd ki: Thanks for playing! Goodbye.
             // És állítsd be a gameOver változó értékét true-ra!
